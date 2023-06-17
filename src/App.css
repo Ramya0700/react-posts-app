@@ -1,38 +1,94 @@
-.App {
+.container {
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  max-height: fit-content;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-input {
+  width: 97%;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.error {
+  color: red;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-item {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.post-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.post-body {
+  font-size: 14px;
+  color: #555;
+}
+
+.pagination {
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination-button {
+  padding: 5px 10px;
+  margin: 0 2px;
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination-button:hover {
+  background-color: #ccc;
+}
+
+.pagination-button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.sort-section {
+  margin-bottom: 10px;
+}
+
+.sort-section label {
+  margin-right: 5px;
+  padding: 10px;
+  width: 100px;
+}
+
+.sort-section select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
 }
